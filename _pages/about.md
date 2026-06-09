@@ -11,7 +11,6 @@ profile:
   more_info: >
     <p>Mila — Quebec AI Institute</p>
     <p>Montréal, Québec, Canada</p>
-    <p>jacob.lavoie@ascientist.io</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
