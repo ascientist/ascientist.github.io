@@ -1,42 +1,11 @@
 name: Integration tests
 
+# These are al-folio TEMPLATE-maintenance integration tests — they validate the
+# theme's bundled demo blog posts (distill, giscus, bootstrap demo, etc.), which
+# this site intentionally removed. They are not gates for this customized site,
+# so they run on demand only (Actions tab) rather than on every push/PR.
 on:
-  push:
-    branches:
-      - master
-      - main
-      - v1.0-dev
-    paths:
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "_config.yml"
-      - "_data/**"
-      - "_pages/**"
-      - "_posts/**"
-      - "_projects/**"
-      - "assets/**"
-      - "test/**"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/unit-tests.yml"
-  pull_request:
-    branches:
-      - master
-      - main
-      - v1.0-dev
-    paths:
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "_config.yml"
-      - "_data/**"
-      - "_pages/**"
-      - "_posts/**"
-      - "_projects/**"
-      - "assets/**"
-      - "test/**"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/unit-tests.yml"
+  workflow_dispatch:
 
 jobs:
   comments-integration-tests:
