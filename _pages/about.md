@@ -7,7 +7,7 @@ subtitle: Applied Research Scientist, <a href='https://mila.quebec/en'>Mila — 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Mila — Quebec AI Institute</p>
     <p>Montréal, Québec, Canada</p>
