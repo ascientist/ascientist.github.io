@@ -27,8 +27,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an Applied Research Scientist at [Mila — Quebec AI Institute](https://mila.quebec/en), working at the intersection of neuroscience and AI. My research lives at the hardware/algorithm boundary of neuro-AI: model-based reinforcement learning, world models, and neuromorphic and spiking neural networks, with applications to retinal prosthetics and biomedical machine learning.
+I am an Applied Research Scientist at [Mila — Quebec AI Institute](https://mila.quebec/en). I like to describe what I do, to the lay person, as **"putting brains in computers, and computers in brains."**
 
-I completed my MSc at the [Université de Sherbrooke](https://www.usherbrooke.ca/) in 2023, with a thesis on modelling image encoding for stimulation by a retinal implant. Across my work I am drawn to questions of how biological and artificial systems learn to see and to act — and how energy-efficient, brain-inspired hardware can bring those capabilities into the real world.
+I'm trained in both **neuroscience** and **computer engineering**, and my work lives at the interface between the two — building artificial systems that learn from the brain, and neural interfaces that borrow from AI. I'm especially drawn to the **ergonomic and security** dimensions of human–machine interfaces that leverage artificial intelligence: not just whether a neural interface works, but whether it is usable, safe, and trustworthy for the person on the other end.
+
+My research runs along the hardware/algorithm boundary of neuro-AI: **model-based reinforcement learning** and world models, **spiking and neuromorphic neural networks**, and **brain–computer / human–machine interfaces**, with applications to retinal prosthetics and biomedical machine learning — often pushing toward energy-efficient, brain-inspired hardware that can run in the real world. I completed my MSc at the [Université de Sherbrooke](https://www.usherbrooke.ca/) in 2023, with a thesis on modelling image encoding for stimulation by a retinal implant.
+
+**Interests:** NeuroAI · spiking neural networks · neurotech · brain–computer interfaces · human–machine interface · reinforcement learning · machine learning & statistics · data analysis · user experience · embedded systems.
 
 Feel free to reach out by [email](mailto:jacob.lavoie@ascientist.io), or find my work on [Google Scholar](https://scholar.google.com/citations?user=oPEANqoAAAAJ), [arXiv](https://arxiv.org/a/lavoie_j_1), and [GitHub](https://github.com/ascientist).
