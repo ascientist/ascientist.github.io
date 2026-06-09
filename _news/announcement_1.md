@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-06-01 09:00:00-0400
+date: 2024-01-15 09:00:00-0500
 inline: true
 related_posts: false
 ---
 
-Welcome! This site is now live — browse my [publications](/publications/) and [CV](/cv/). More updates coming soon. :sparkles:
+Our paper *Learning to See via Epiretinal Implant Stimulation in silico with Model-Based Deep Reinforcement Learning* appeared in **Biomedical Physics & Engineering Express** ([10.1088/2057-1976/acf1a5](https://doi.org/10.1088/2057-1976/acf1a5)). :eye:

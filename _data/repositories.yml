@@ -1,14 +1,8 @@
+# GitHub users / repos shown by the optional repositories page (not in nav).
 github_users:
-  - torvalds
-  - alshedivat
+  - ascientist
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - NECOTIS/rlretina
