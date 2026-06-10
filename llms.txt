@@ -1,0 +1,28 @@
+---
+permalink: /llms.txt
+---
+# Jacob Lavoie
+
+> Applied Research Scientist at Mila — Quebec AI Institute, working at the interface of neuroscience and computer engineering ("putting brains in computers, and computers in brains"). Research focus: neuro-AI at the hardware/algorithm boundary — retinal prosthetics, spiking and neuromorphic neural networks, model-based reinforcement learning and world models, and biomedical machine learning.
+
+Jacob Lavoie is trained in both neuroscience and computer engineering and works at the interface of the two. He is especially interested in the ergonomic and security dimensions of AI-leveraged human–machine interfaces (brain–computer interfaces, neurotech). MSc, Université de Sherbrooke (2023). Based in Montréal, Québec, Canada.
+
+## Pages
+- [About / Home]({{ site.url }}{{ site.baseurl }}/): research bio, overview, and contact.
+- [Publications]({{ site.url }}{{ site.baseurl }}/publications/): peer-reviewed papers and preprints with PDF/arXiv/DOI links and citation counts.
+- [CV]({{ site.url }}{{ site.baseurl }}/cv/): education, experience, and skills.
+- [Projects]({{ site.url }}{{ site.baseurl }}/projects/): selected research and engineering projects.
+
+## Selected publications
+- Learning to See via Epiretinal Implant Stimulation in silico with Model-Based Deep Reinforcement Learning — Biomedical Physics & Engineering Express 10(2), 025006 (2024). https://arxiv.org/abs/2606.03118
+- Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization — arXiv:2605.28810 (2026).
+- A 1.6-fJ/Spike Subthreshold Analog Spiking Neuron in 28nm CMOS — NEWCAS 2022. https://arxiv.org/abs/2408.07734
+- Quantized spiking neural networks on FPGA for retinal prosthetics — BioCAS 2023.
+- Energy-efficient spiking neural network for a retinal prosthesis — Neuroelectronics 2(1) (2025).
+
+## Profiles
+- ORCID: https://orcid.org/0000-0003-3741-4701
+- Google Scholar: https://scholar.google.com/citations?user=oPEANqoAAAAJ
+- arXiv: https://arxiv.org/a/lavoie_j_1
+- GitHub: https://github.com/ascientist
+- LinkedIn: https://www.linkedin.com/in/jacob-lavoie-017a1761
