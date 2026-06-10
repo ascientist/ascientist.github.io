@@ -6,6 +6,7 @@ github_username: ascientist # your GitHub username
 linkedin_username: jacob-lavoie-017a1761 # your LinkedIn username
 scholar_userid: oPEANqoAAAAJ # your Google Scholar ID
 orcid_id: 0000-0003-3741-4701 # your ORCID iD (strong entity / sameAs signal)
+arxiv_id: lavoie_j_1 # arXiv author id -> feeds Schema.org sameAs (https://arxiv.org/a/lavoie_j_1.html)
 rss_icon: true # comment this line to hide the RSS icon
 # arXiv author page (no dedicated jekyll-socials field, so expose it as a custom social)
 custom_social:
