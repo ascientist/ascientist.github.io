@@ -1,0 +1,38 @@
+---
+layout: post
+title: Of Screens and Men
+date: 2026-06-18 09:00:00-04:00
+description: The screen is our horse — and the agent is the car that will make it beside the point. A Steinbeckian meditation on technology, circumstance, and whether the next instrument leaves us more understood and more alone, or more understanding and less alone.
+tags: [essay, AI, society]
+categories: [essays]
+author: Jacob Lavoie
+canonical_url: https://ascientist.github.io/blog/2026/of-screens-and-men/
+giscus_comments: false
+related_posts: false
+---
+
+For most of human history, the horse was the floor the world stood on. It pulled the plough and the cannon and the hearse; it carried the post, the soldier, the bride. It was how a person went to work and how a person fled trouble. It was also how we played — the race, the hunt, the Sunday ride through the park — and how we announced ourselves: you could read a man's whole standing in the animal beneath him. Whole cities were built to its scale. Whole trades existed only to keep it fed, shod, stabled, and harnessed. To be alive in 1900 was to live inside an order arranged, in a thousand invisible ways, around the horse.
+
+And then, in the space of a single generation, it was gone. Not improved — gone. The car did not give people a faster horse; it made the horse beside the point. By the 1930s the farrier's fire had cooled in most towns, the livery stable had become a garage, and a child could grow up without once needing to know how to approach an animal that had organized civilization for four thousand years. Today the horse is a hobby, a sport, a romance — an icon of an era we can name but can no longer quite *feel*. We know it was central. We cannot inhabit how central.
+
+I think the screen is our horse.
+
+Consider how total it has become. We work through glass — nearly every job now passes through a lit rectangle. We play through it — the films, the games, the endless scroll. We court and quarrel and grieve through it. We show ourselves off with it: the newest phone is the gelding we ride into town. Life has rearranged itself to the screen's scale so thoroughly that its absence is nearly unthinkable; *of course there is a screen* is precisely the certainty the stable-hand felt about the horse. The reign feels permanent. They always do, mid-stride.
+
+The thing that ends a reign like this is never a better version of itself. It is something that makes the whole category unnecessary. I suspect that something is the agent — a capable intelligence you delegate to rather than operate. When you can simply ask, and a mind books and buys and drafts and decides and speaks on your behalf, you stop *looking at* a screen and start *handing off to* an intelligence. The rectangle doesn't vanish overnight; it becomes a fallback, then a relic, then a thing your grandchildren find quaint. *They stared at little glowing panes all day? Even at dinner? Even with the people they loved in the room?* The screen will become an icon of our era, and they will know it was central, and they will not quite be able to feel how central.
+
+That is the easy half of the essay — the part that is merely prediction, and predictions are cheap. The harder half is the one Steinbeck would have insisted on.
+
+Because the horse was never one thing. It was the squire's sport and the drayman's exhaustion at once. The same animal that opened the world for the man who owned land and leisure tied the carter more tightly to the road, the early mornings, the aching back. The horse promised mobility and freedom, and it delivered them — unevenly, according to what you already had. Mobility for some; a heavier harness for others.
+
+The screen makes the identical promise and keeps it the identical way. It offers access — to work, to learning, to one another, to a storefront for your ambitions — and it appears to democratize all of it: anyone can study, build, sell, be seen. But the screen does not erase the differences in money, health, time, schooling, connection, and the quiet arithmetic of whom the algorithm decides to show. The professional's laptop frees her to work from anywhere; the courier's phone rates him, tracks him, and decides whether he eats this week. The same instrument, opposite lives — and the difference is not the instrument. It is the circumstances each person carried to it. This is the Steinbeckian wound: *the tool through which a person reaches for the dream can be part of the very system that keeps the dream out of reach.* George and Lennie's small farm was modest, and it was impossible, and their failure was not a failure of character. It was the conditions they were placed in. Burns knew it before Steinbeck borrowed his line: the best-laid schemes go wrong not because we fail to plan, but because we act inside a world we do not control.
+
+So when the agent arrives, listen for the promise, because it will be word-for-word the old one: *now everyone has a tireless mind in their corner — the great equalizer at last.* And here is where Steinbeck refuses to let us be comforted. A new instrument enlarges the field of the possible; it does not abolish human limitation. The leverage of an agent will accrue, at least at first, to those already able to direct it, afford the best of it, and trust it with their lives. The agent may turn out to be the small farm — the independence finally within reach — or it may turn out to be one more thing that quietly reproduces who already had the leverage, dressed up as liberation. Most likely both, unevenly, according to what you already have. The dream of democratized capability and the machinery of fresh stratification may be the very same machine.
+
+I don't want to end there, though, because Steinbeck didn't. His deeper moral was never despair. It was that if people are shaped by circumstances they did not choose, then understanding those circumstances should make us *slower to judge and quicker to care*. What looks like laziness may be exhaustion. What looks like a person lost to their screen may be loneliness, or the cheapest relief on offer, or the least bad option among several bad ones. Understanding, for Steinbeck, was the road to compassion — and compassion the road to something like love.
+
+That is the hope I would hang the whole thing on. An agent that genuinely understood us — our circumstances, our constraints, the dream we are actually chasing and the harness we are actually wearing — could, in principle, make us more humane to one another, not less. It could carry the exhausting necessity so that there is more of us left over for each other.
+
+But I would be lying if I did not also name the fear. The other future is the *Blade Runner* one: each of us alone in the glow, bonded to a machine that knows us perfectly and a world that knows us not at all — having quietly traded the difficult work of understanding *each other* for the frictionless comfort of being understood *by our agents*. The screen, for all its faults, still pointed — however badly — at other people. The danger is an intelligence so attentive to me that I stop reaching for you.
+
+The horse went away and we hardly noticed until it was already a memory. The screen will go the same way. What I cannot yet tell — what I think is still, genuinely, ours to decide — is whether the thing that replaces it leaves us more understood and more alone, or more understanding and less alone. Technology keeps enlarging the field of human possibility. It has never once abolished human limitation. Honest understanding — of a stranger, of a century, of a machine — begins when we can hold both at once: the dream a person is reaching for, and the conditions they are reaching through.
