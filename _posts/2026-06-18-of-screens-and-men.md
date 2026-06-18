@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Of Screens and Men
-date: 2026-06-18 09:00:00-04:00
+date: 2026-06-18 06:00:00-04:00
 description: The screen is our horse — and the agent is the car that will make it beside the point. A Steinbeckian meditation on technology, circumstance, and whether the next instrument leaves us more understood and more alone, or more understanding and less alone.
 tags: [essay, AI, society]
 categories: [essays]
