@@ -1,0 +1,50 @@
+{% comment %} Unobtrusive custom event capture for PostHog. Uses a single delegated click listener on the document and no-ops unless window.posthog is
+present, so it stays inert when PostHog is disabled or skipped (blank key / localhost). Captures paper PDF clicks, CV/resume downloads, and outbound
+clicks to common academic profiles. {% endcomment %}
+<script>
+  (function () {
+    var OUTBOUND_DOMAINS = ["scholar.google", "orcid.org", "github.com", "arxiv.org", "linkedin"];
+
+    function matchedOutboundDomain(href) {
+      for (var i = 0; i < OUTBOUND_DOMAINS.length; i++) {
+        if (href.indexOf(OUTBOUND_DOMAINS[i]) !== -1) {
+          return OUTBOUND_DOMAINS[i];
+        }
+      }
+      return null;
+    }
+
+    function looksLikeCv(anchor, href) {
+      var text = (anchor.textContent || "").toLowerCase();
+      var target = (href + " " + text).toLowerCase();
+      return /\b(cv|r[eé]sum[eé])\b/.test(target);
+    }
+
+    document.addEventListener("click", function (event) {
+      if (!window.posthog || typeof window.posthog.capture !== "function") {
+        return;
+      }
+      var anchor = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+      if (!anchor) {
+        return;
+      }
+      var href = anchor.getAttribute("href") || "";
+      if (!href) {
+        return;
+      }
+
+      if (/\.pdf(\?|#|$)/i.test(href)) {
+        window.posthog.capture("paper_pdf_click", { href: href });
+      }
+
+      if (looksLikeCv(anchor, href)) {
+        window.posthog.capture("cv_download", { href: href });
+      }
+
+      var domain = matchedOutboundDomain(href);
+      if (domain) {
+        window.posthog.capture("outbound_click", { href: href, domain: domain });
+      }
+    });
+  })();
+</script>
