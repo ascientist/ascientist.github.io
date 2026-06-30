@@ -1,3 +1,4 @@
+const { test } = require("@playwright/test");
 const { PNG } = require("pngjs");
 const pixelmatchModule = require("pixelmatch");
 const pixelmatch = pixelmatchModule.default || pixelmatchModule;
@@ -47,6 +48,18 @@ async function preparePage(page, themeSetting = "light") {
     window.localStorage.setItem("theme", setting);
   }, themeSetting);
   await applyNetworkStubs(page);
+}
+
+// This site intentionally removes several upstream al-folio demo pages/posts
+// (e.g. the bundled blog posts, teaching, and repositories pages). Interaction
+// contracts inherited from the starter target that demo content, so navigate
+// and skip — rather than fail — when the target page is absent (HTTP 404),
+// matching how the starter already treats demo-content tests as non-gating.
+async function gotoOrSkip(page, route, options = {}) {
+  const response = await page.goto(route, { waitUntil: "domcontentloaded", ...options });
+  const status = response ? response.status() : 0;
+  test.skip(status === 404, `Skipped: ${route} is not present on this site (HTTP ${status}).`);
+  return response;
 }
 
 async function stabilizeVisuals(page) {
@@ -154,6 +167,7 @@ async function compareWithBaseline(context, currentPage, route, themeSetting, op
 
 module.exports = {
   preparePage,
+  gotoOrSkip,
   stabilizeVisuals,
   compareWithBaseline,
 };
