@@ -59,9 +59,24 @@ jobs:
       - name: Install JS deps 📦
         run: npm ci
 
-      - name: Prepare baseline worktree (v0.16.3) 🧱
+      - name: Prepare baseline worktree 🧱
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          git worktree add ../al-folio-baseline v0.16.3
+          set -euo pipefail
+          # Visual parity compares the candidate against a baseline build of the
+          # same site. This fork does not carry the upstream al-folio `v0.16.3`
+          # release tag, so the baseline is the change's merge target (the site
+          # as it exists before this PR) rather than a non-existent tag.
+          if [ -n "${BASELINE_REF:-}" ]; then
+            RESOLVED_REF="$BASELINE_REF"
+          elif [ -n "${PR_BASE_SHA:-}" ]; then
+            RESOLVED_REF="$PR_BASE_SHA"
+          else
+            RESOLVED_REF="$(git rev-parse origin/main 2>/dev/null || git rev-parse HEAD~1)"
+          fi
+          echo "Using baseline ref: $RESOLVED_REF"
+          git worktree add ../al-folio-baseline "$RESOLVED_REF"
           (cd ../al-folio-baseline && bundle install && npm ci)
 
       - name: Install Jupyter + ImageMagick runtime deps 🧰
