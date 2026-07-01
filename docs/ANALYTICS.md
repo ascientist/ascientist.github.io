@@ -12,6 +12,7 @@ This guide helps you add website analytics to track visitor statistics and behav
   - [Privacy-Friendly Alternatives](#privacy-friendly-alternatives)
     - [Pirsch Analytics](#pirsch-analytics)
     - [Openpanel Analytics](#openpanel-analytics)
+    - [PostHog (privacy-first, cookieless)](#posthog-privacy-first-cookieless)
   - [Monitoring &amp; Performance](#monitoring--performance)
     - [Cronitor](#cronitor)
   - [GDPR and Privacy Considerations](#gdpr-and-privacy-considerations)
@@ -34,6 +35,7 @@ Currently implemented in al-folio:
 - **Google Analytics** – Free, feature-rich, but collects user data
 - **Pirsch Analytics** – GDPR-compliant, free tier available, European servers
 - **Openpanel Analytics** – Open-source option, privacy-focused
+- **PostHog** – Product analytics configured cookieless with session recording disabled
 - **Cronitor** – Uptime monitoring with Real User Monitoring (RUM) analytics
 
 ---
@@ -125,6 +127,31 @@ If you're concerned about user privacy or GDPR compliance, consider these altern
 
 ---
 
+### PostHog (privacy-first, cookieless)
+
+**Best for:** Product-style analytics (custom events, funnels) without cookies or a consent banner
+
+This starter ships a self-guarded PostHog loader that is configured to be privacy-first by default:
+
+- ✅ **Cookieless** — initialized with `persistence: 'memory'`, so PostHog stores nothing in cookies or `localStorage`
+- ✅ **No session recording** — initialized with `disable_session_recording: true`, so no session replay is ever captured, even after a project key is set
+- ✅ **No local noise** — a hostname guard skips loading on `localhost` / `127.0.0.1`
+- ✅ **Off unless keyed** — renders only when `enable_posthog: true` **and** `posthog_api_key` is non-empty, so a blank key keeps PostHog out of the built output entirely
+- ✅ **Sanitized custom events** — the delegated click tracker (`paper_pdf_click`, `cv_download`, `outbound_click`) strips query strings and hash fragments from every captured `href`, so tracking tokens and fragment state never leak into analytics (the domain is preserved for outbound attribution)
+
+**Setup:**
+
+1. Sign up at [PostHog](https://posthog.com) and create a project
+2. Copy your **Project API Key** (format: `phc_...`)
+3. In `_config.yml`, set `enable_posthog: true`
+4. Add your key: `posthog_api_key: "phc_XXXX"`
+5. If your project lives in the EU cloud, set `posthog_api_host: "https://eu.i.posthog.com"` (defaults to the US cloud)
+6. Commit and push
+
+Because the loader is cookieless and never records sessions, no GDPR cookie banner is required for this integration.
+
+---
+
 ## Monitoring & Performance
 
 ### Cronitor
@@ -158,6 +185,7 @@ If you're in the European Union or serve EU visitors, consider GDPR requirements
 
 - ✅ Pirsch Analytics
 - ✅ Openpanel Analytics
+- ✅ PostHog (cookieless memory persistence, session recording disabled)
 
 ### Services requiring cookie consent
 
@@ -168,12 +196,13 @@ If you're in the European Union or serve EU visitors, consider GDPR requirements
 
 ## Comparing Analytics Services
 
-| Service              | Free         | GDPR                | Setup  | Features         | Best for                   |
-| -------------------- | ------------ | ------------------- | ------ | ---------------- | -------------------------- |
-| **Google Analytics** | ✅           | ⚠️ Requires consent | Easy   | Detailed reports | Detailed tracking          |
-| **Pirsch**           | ✅ Free tier | ✅                  | Easy   | Balanced         | GDPR compliance            |
-| **Openpanel**        | ✅           | ✅                  | Medium | Modern dashboard | Privacy-focused developers |
-| **Cronitor**         | Paid         | ⚠️ Requires consent | Easy   | Uptime + RUM     | Uptime monitoring          |
+| Service              | Free         | GDPR                | Setup  | Features         | Best for                     |
+| -------------------- | ------------ | ------------------- | ------ | ---------------- | ---------------------------- |
+| **Google Analytics** | ✅           | ⚠️ Requires consent | Easy   | Detailed reports | Detailed tracking            |
+| **Pirsch**           | ✅ Free tier | ✅                  | Easy   | Balanced         | GDPR compliance              |
+| **Openpanel**        | ✅           | ✅                  | Medium | Modern dashboard | Privacy-focused developers   |
+| **PostHog**          | ✅ Free tier | ✅ Cookieless       | Easy   | Custom events    | Product-style event tracking |
+| **Cronitor**         | Paid         | ⚠️ Requires consent | Easy   | Uptime + RUM     | Uptime monitoring            |
 
 ---
 
