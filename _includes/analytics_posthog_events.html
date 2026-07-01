@@ -1,9 +1,23 @@
 {% comment %} Unobtrusive custom event capture for PostHog. Uses a single delegated click listener on the document and no-ops unless window.posthog is
 present, so it stays inert when PostHog is disabled or skipped (blank key / localhost). Captures paper PDF clicks, CV/resume downloads, and outbound
-clicks to common academic profiles. {% endcomment %}
+clicks to common academic profiles. All `href` properties are sanitized to strip query strings and hash fragments before they reach PostHog, so no
+tracking tokens, session ids, or fragment state leak into analytics; the domain is preserved for outbound attribution. {% endcomment %}
 <script>
   (function () {
     var OUTBOUND_DOMAINS = ["scholar.google", "orcid.org", "github.com", "arxiv.org", "linkedin"];
+
+    // Drop query strings and hash fragments so tracking tokens / fragment state never reach PostHog,
+    // while keeping the scheme, domain, and path. Resolves relative hrefs against the current page so
+    // outbound attribution still works, and falls back to naive string trimming for non-parseable hrefs.
+    function sanitizeHref(rawHref) {
+      var trimmed = rawHref.split("#")[0].split("?")[0];
+      try {
+        var url = new URL(rawHref, window.location.href);
+        return url.origin + url.pathname;
+      } catch (e) {
+        return trimmed;
+      }
+    }
 
     function matchedOutboundDomain(href) {
       for (var i = 0; i < OUTBOUND_DOMAINS.length; i++) {
@@ -32,18 +46,19 @@ clicks to common academic profiles. {% endcomment %}
       if (!href) {
         return;
       }
+      var safeHref = sanitizeHref(href);
 
       if (/\.pdf(\?|#|$)/i.test(href)) {
-        window.posthog.capture("paper_pdf_click", { href: href });
+        window.posthog.capture("paper_pdf_click", { href: safeHref });
       }
 
       if (looksLikeCv(anchor, href)) {
-        window.posthog.capture("cv_download", { href: href });
+        window.posthog.capture("cv_download", { href: safeHref });
       }
 
-      var domain = matchedOutboundDomain(href);
+      var domain = matchedOutboundDomain(safeHref);
       if (domain) {
-        window.posthog.capture("outbound_click", { href: href, domain: domain });
+        window.posthog.capture("outbound_click", { href: safeHref, domain: domain });
       }
     });
   })();
