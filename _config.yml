@@ -116,7 +116,8 @@ analytics:
 
 # PostHog product analytics (privacy-first, cookieless). Loads only when enable_posthog is true
 # AND posthog_api_key is non-empty. Memory persistence means no cookies, so no consent banner is
-# required for EU visitors. Runs side by side with Google Analytics above.
+# required for EU visitors, and session recording stays disabled so no session replay is ever
+# captured even after a key is set. Runs side by side with Google Analytics above.
 enable_posthog: true
 posthog_api_key: "" # phc_ project key, filled in later; when blank, PostHog must NOT load
 posthog_api_host: "https://us.i.posthog.com"

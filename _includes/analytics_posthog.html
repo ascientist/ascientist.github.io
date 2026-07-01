@@ -1,7 +1,8 @@
 {% comment %} PostHog product analytics loader (privacy-first, cookieless). Renders only when `enable_posthog` is true AND `posthog_api_key` is
 non-empty, so a blank key keeps PostHog out of the built output entirely. `persistence: 'memory'` keeps PostHog cookieless (no consent banner required
-for EU visitors), and a hostname guard prevents any tracking on localhost / 127.0.0.1 during local development. This runs side by side with Google
-Analytics. {% endcomment %} {% if site.enable_posthog and site.posthog_api_key != "" %}
+for EU visitors), `disable_session_recording: true` guarantees no session replay is ever captured even after a project key is filled in, and a
+hostname guard prevents any tracking on localhost / 127.0.0.1 during local development. This runs side by side with Google Analytics. {% endcomment %}
+{% if site.enable_posthog and site.posthog_api_key != "" %}
 <!-- PostHog (privacy-first, cookieless) -->
 <script>
   (function () {
@@ -54,7 +55,7 @@ Analytics. {% endcomment %} {% if site.enable_posthog and site.posthog_api_key !
     posthog.init("{{ site.posthog_api_key }}", {
       api_host: "{{ site.posthog_api_host }}",
       persistence: "memory",
-      disable_session_recording: false,
+      disable_session_recording: true,
       person_profiles: "identified_only",
       capture_pageview: true,
     });
