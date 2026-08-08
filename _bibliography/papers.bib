@@ -30,20 +30,24 @@
   abstract    = {Functional music applications, from consumer focus and sleep aids to clinical interventions, share a distinctive recommendation problem: success is defined by the listener's affective state, but online experimentation on emotion is ethically constrained, particularly for clinical populations who cannot reliably skip a song or report distress. We describe AMRS, the Affective Music Recommendation System deployed on LUCID's health-and-wellness platforms, which serve clinical users (primarily older adults with neurocognitive conditions) and consumer-wellness users across energize, focus, calm, and sleep modes. AMRS is built around a rollout-based world model: a causal transformer trained on logged listening data to jointly predict engagement, binary rating, and self-reported valence and arousal. The world model serves both as an in-silico simulator for offline policy training and as a stress-testing tool before deployment. A recommender policy initialized by behaviour cloning is fine-tuned offline with Direct Preference Optimization (DPO) against a configurable multi-objective utility function. Under a strict cold-start protocol, the world model predicts both behavioural and affective signals with usable fidelity; DPO improves predicted valence and arousal over the cloned baseline while maintaining a similar diversity profile and avoiding the distributional collapse produced by greedy optimization. We position the work as an early deployed validation of a methodology for affective recommendation when online experimentation is ethically untenable.}
 }
 
-@article{besrour2024analog,
-  abbr        = {arXiv},
+@article{besrour2026spiking,
+  abbr        = {JETCAS},
   bibtex_show = {true},
-  title       = {Analog spiking neuron in CMOS 28 nm towards large-scale neuromorphic processors},
-  author      = {Besrour, Mohammed and Lavoie, Jacob and Omrani, Takwa and Martin-Hardy, Gabriel and Ranjbar-Koleibi, Esmaeil and others},
-  journal     = {arXiv preprint arXiv:2408.07734},
-  year        = {2024},
-  arxiv       = {2408.07734}
+  selected    = {true},
+  title       = {A 1.6-fJ/Spike Subthreshold Analog Spiking Neuron in 28 nm CMOS},
+  author      = {Besrour, Marwan and Omrani, Takwa and Lavoie, Jacob and Bouchard, Samuel and Martin-Hardy, Gabriel and Ranjbar-Koleibi, Esmaeil and M{\'e}nard, J{\'e}r{\'e}my and Koua, Konin and Marcoux, Philippe and Boukadoum, Mounir and Fontaine, R{\'e}jean},
+  journal     = {IEEE Journal on Emerging and Selected Topics in Circuits and Systems},
+  year        = {2026},
+  publisher   = {IEEE},
+  doi         = {10.1109/JETCAS.2026.3721358},
+  url         = {https://ieeexplore.ieee.org/document/11643762},
+  arxiv       = {2408.07734},
+  abstract    = {The computational complexity of deep learning algorithms has given rise to significant speed and memory challenges for the execution hardware. In energy-limited portable devices, highly efficient processing platforms are indispensable for reproducing the prowess afforded by much bulkier processing platforms. In this work, we present a low-power Leaky Integrate-and-Fire (LIF) neuron design fabricated in TSMC's 28 nm CMOS technology as proof of concept to build an energy-efficient mixed-signal Neuromorphic System-on-Chip (NeuroSoC). The fabricated neuron consumes 1.61 fJ/spike and occupies an active area of 34 $\mu m^{2}$, leading to a maximum spiking frequency of 300 kHz at 250 mV power supply. These performances are used in a software model to emulate the dynamics of a Spiking Neural Network (SNN). Employing supervised backpropagation and a surrogate gradient technique, the resulting accuracy on the MNIST dataset, using 4-bit post-training quantization stands at 82.5\%. The approach underscores the potential of such ASIC implementation of quantized SNNs to deliver high-performance, energy-efficient solutions to various embedded machine-learning applications.}
 }
 
 @inproceedings{besrour2022spike,
   abbr        = {NEWCAS},
   bibtex_show = {true},
-  selected    = {true},
   title       = {A 1.6-fJ/Spike Subthreshold Analog Spiking Neuron in 28 nm CMOS},
   author      = {Besrour, Mohammed and Zitoun, Souhaiel and Lavoie, Jacob and Omrani, Takwa and Koua, Kevin and Benhouria, Maher and others},
   booktitle   = {2022 20th IEEE Interregional NEWCAS Conference (NEWCAS)},
