@@ -34,4 +34,6 @@ My research runs along the hardware/algorithm boundary of neuro-AI: **model-base
 
 **Interests:** NeuroAI · spiking neural networks · neurotech · brain–computer interfaces · human–machine interface · reinforcement learning · machine learning & statistics · data analysis · user experience · embedded systems.
 
+I also run [Atelier IA](/atelier-ia/), an independent practical AI training program for Québec SME leaders (cohort, playbooks, community). It is not a Mila program.
+
 Feel free to reach out by [email](mailto:jacob.lavoie@ascientist.io), or find my work on [Google Scholar](https://scholar.google.com/citations?user=oPEANqoAAAAJ), [arXiv](https://arxiv.org/a/lavoie_j_1), and [GitHub](https://github.com/ascientist).
