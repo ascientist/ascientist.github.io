@@ -1,0 +1,433 @@
+# Atelier IA — independent formation pratique for Québec SMEs.
+# Not a Mila product. See disclaimer_short on every public page.
+
+name: Atelier IA
+tagline: >-
+  La plateforme francophone où les dirigeants de PME québécoises apprennent l'IA en pratiquant — mentorat live, communauté, et solutions prêtes à remixer — sans devoir devenir data scientists.
+one_liner: IA concrète pour PME québécoises. On livre des workflows, pas des webinaires.
+email: jacob.lavoie@ascientist.io
+location: Montréal, Québec
+
+disclaimer_short: >-
+  Atelier IA est une formation indépendante de Jacob Lavoie. Ce n'est pas un programme de Mila, du PARI CNRC, ni d'un organisme public.
+disclaimer_affiliation: >-
+  Jacob Lavoie est chercheur en recherche appliquée à Mila — Institut québécois d'intelligence artificielle. Cette affiliation décrit son emploi; elle n'implique aucun endossement, aucun partenariat officiel, et aucun accès aux ressources, données ou clients de Mila.
+
+pricing:
+  currency: CAD
+  diagnostic:
+    label: Diagnostic 30 min
+    price: 0
+    note: Trois processus où l'IA paie vraiment chez vous. Sans pitch de 45 minutes.
+  cohorte_siege:
+    label: Cohorte — 1 siège
+    price: 2490
+    beta_price: 1490
+    note: Huit semaines, lives, capstone dans votre entreprise.
+  cohorte_entreprise:
+    label: Cohorte — entreprise (2 sièges)
+    price: 5900
+    beta_price: 3900
+    note: Dirigeant + relais opérationnel. C'est le format qui tient.
+  abonnement_user:
+    label: Atelier+ individuel
+    price: 149
+    period: mois
+    note: Réservé aux alumni de cohorte. Mentorat live + communauté + playbooks.
+  abonnement_org:
+    label: Atelier+ organisation
+    price: 790
+    period: mois
+    note: Jusqu'à 5 sièges. Canaux secteur + office hours.
+  sprint:
+    label: Sprint agent (2 semaines)
+    price: 8500
+    note: Done-with-you. Ouvert après la cohorte 1, pas avant.
+
+cohort:
+  title: "IA pour dirigeants de PME — du cas d'usage à l'agent en production"
+  duration_weeks: 8
+  language: Français (Québec)
+  format: 90 min live / semaine + 30 min office hours + travail dans votre entreprise
+  platform: Circle ou Skool + Zoom
+  seats: 8 à 15 entreprises (cohorte 1, tarif beta contre droit de cas)
+  audience: >-
+    Dirigeantes et dirigeants de PME, DG, ops, et un relais technique s'il existe.
+    Pas un cours de data science.
+  not_for:
+    - Équipes qui veulent un modèle custom entraîné sur leurs données (ça, c'est PARI / CRIM / Mila recherche).
+    - Personnes qui cherchent une certification universitaire.
+    - Entreprises sans un vrai processus à améliorer dans les 8 semaines.
+  outcomes:
+    - Une carte de valeur IA (où ça paie vs théâtre).
+    - Un workflow en production chez vous, pas dans un Google Doc.
+    - Une checklist Loi 25 applicable à ce workflow.
+    - Un rituel de mesure (temps gagné, erreurs évitées, dollars).
+  weeks:
+    - week: 1
+      title: Cartographie de valeur
+      live: "Mardi 12 h–13 h 30 (heure de l'Est)"
+      homework: Lister 10 processus; en scorer 3 (fréquence × douleur × données disponibles × risque).
+      deliverable: Carte de valeur v1, un processus retenu pour le capstone.
+    - week: 2
+      title: Données et Loi 25
+      live: Mardi 12 h–13 h 30
+      homework: Inventaire des renseignements personnels touchés par le processus retenu.
+      deliverable: Fiche de conformité (finalité, base, minimisation, conservation, sous-traitants).
+    - week: 3
+      title: Du prompt à la SOP, de la SOP à l'outil
+      live: Mardi 12 h–13 h 30
+      homework: Écrire la procédure humaine actuelle en étapes observables.
+      deliverable: SOP + prompts versionnés + critère de « assez bon pour un humain ».
+    - week: 4
+      title: Agents et mémoire d'entreprise
+      live: Mardi 12 h–13 h 30
+      homework: Décider ce que l'agent doit retenir (faits, décisions, exceptions) et ce qu'il doit oublier.
+      deliverable: Schéma de mémoire (sources, fraîcheur, droits d'accès) pour le capstone.
+    - week: 5
+      title: Stack no-code / low-code du Québec
+      live: Mardi 12 h–13 h 30
+      homework: Brancher le workflow sur les outils que vous avez déjà (M365, Google, CRM, ERP).
+      deliverable: Prototype n8n, Make, Power Automate ou Copilot Studio — un seul, pas cinq.
+    - week: 6
+      title: ROI et gouvernance légère
+      live: Mardi 12 h–13 h 30
+      homework: Baseline manuelle (temps, erreurs, file d'attente) sur une semaine.
+      deliverable: Tableau de bord d'une page + règle d'escalade humaine.
+    - week: 7
+      title: Capstone — construction
+      live: Mardi 12 h–13 h 30
+      homework: Mettre le workflow en vrai, sur de vraies files, avec un humain dans la boucle.
+      deliverable: Workflow live + journal d'incidents de la première semaine.
+    - week: 8
+      title: Mise en production et revue
+      live: Mardi 12 h–13 h 30 (démos)
+      homework: Présenter 8 minutes — problème, contrainte Loi 25, démo, métrique.
+      deliverable: Cas (anonymisable) + décision de rester sur Atelier+ ou d'arrêter.
+
+playbooks:
+  - id: triage-courriel
+    title: Triage de courriel / boîte partagée
+    sector: Services, cabinets, support
+    problem: La boîte info@ ou ventes@ est un goulot. Les urgences se noient.
+    result_in_two_weeks: Classement, brouillon de réponse, et file « humain requis » dans le fil existant.
+    stack:
+      - Microsoft 365 ou Google Workspace
+      - Copilot / Claude Team pour le brouillon
+      - Power Automate ou n8n pour l'aiguillage
+    data_touched: Contenu des courriels, noms, signatures, parfois pièces jointes.
+    loi25:
+      - Finalité limitée au triage interne — pas d'entraînement de modèle public.
+      - Désactiver l'amélioration du modèle chez le fournisseur.
+      - Pas de transfert hors Canada sans contrat et avis.
+      - Conservation des brouillons alignée sur la politique courriel existante.
+    out_of_scope: Envoi automatique au client sans relecture humaine (cohorte 1).
+    success: Temps de première réponse, % de mal-classés, heures/semaine rendues à l'équipe.
+  - id: rag-rh
+    title: RAG sur politiques RH et onboarding
+    sector: RH, PME 20–200 personnes
+    problem: Le manuel d'employé a 40 pages et personne ne le lit. Les RH répondent 15 fois à la même question.
+    result_in_two_weeks: Assistant interne qui cite la politique, sinon dit « je ne sais pas ».
+    stack:
+      - SharePoint / Google Drive
+      - NotebookLM ou RAG simple (équipe + documents versionnés)
+      - Contrôle d'accès par groupe
+    data_touched: Politiques, grilles salariales si elles sont dans le même dossier (à isoler).
+    loi25:
+      - Séparer les docs publics internes des dossiers individuels d'employés.
+      - Jamais de dossier disciplinaire ou médical dans l'index.
+      - Journaliser qui a demandé quoi si les réponses touchent des conditions de travail.
+    out_of_scope: Décisions d'embauche, d'évaluation ou de congédiement.
+    success: Tickets RH répétitifs, temps d'onboarding, taux de « je ne sais pas » (doit rester visible).
+  - id: qualification-leads
+    title: Qualification de leads et notes CRM
+    sector: Ventes B2B
+    problem: Les reps collent des notes inégales. Le pipeline ment.
+    result_in_two_weeks: Résumé d'appel structuré + score de qualification + prochaine action dans le CRM.
+    stack:
+      - HubSpot, Salesforce ou Dynamics (ce que vous avez)
+      - Enregistrement d'appel seulement avec consentement
+      - n8n / Make pour l'écriture CRM
+    data_touched: Noms, employeurs, besoins, parfois informations financières.
+    loi25:
+      - Consentement à l'enregistrement d'appel (pratique et, selon le cas, légal).
+      - Finalité CRM — pas de revente de listes.
+      - Durée de conservation des enregistrements plus courte que celle des notes.
+    out_of_scope: Appels sortants 100 % agents vocaux vers des inconnus.
+    success: "% d'opportunités avec prochaine action, délai de saisie, taux de no-show."
+  - id: reunion-taches
+    title: Résumé de réunions → tâches
+    sector: Toutes
+    problem: Les décisions meurent dans le transcript.
+    result_in_two_weeks: Compte rendu en français, décisions, propriétaires, échéances, dans l'outil de tâches.
+    stack:
+      - Teams / Meet / Zoom
+      - Copilot, Claude ou un outil de notes
+      - Planner, Jira, Linear ou Asana
+    data_touched: Parole des employés et parfois de clients.
+    loi25:
+      - Avis en début de réunion si enregistrement.
+      - Pas d'indexation des réunions RH sensibles (paie, santé, harcèlement).
+      - Accès au transcript limité aux participants et à leur gestionnaire.
+    out_of_scope: Enregistrement secret, analyse de sentiment sur les employés.
+    success: "% de réunions avec tâches créées le jour même, tâches orphelines à 14 jours."
+  - id: factures-ap
+    title: Extraction de factures / comptes fournisseurs léger
+    sector: Finance, cabinets, manufacturier
+    problem: Quelqu'un retape des PDF dans Excel ou l'ERP.
+    result_in_two_weeks: Extraction des champs + file de validation humaine avant écriture comptable.
+    stack:
+      - Boîte courriel factures@
+      - OCR + LLM pour les champs
+      - Export CSV ou connecteur Acomba / QuickBooks / Sage
+    data_touched: Renseignements de fournisseurs, montants, parfois NAS si un pigiste facture mal.
+    loi25:
+      - Minimiser — extraire les champs utiles, pas le PDF entier vers un chatbot grand public.
+      - Fournisseur d'OCR/LLM avec contrat et résidence des données documentée.
+      - Quarantaine des pièces qui contiennent un identifiant sensible.
+    out_of_scope: Paiement automatique sans double approbation.
+    success: Temps par facture, taux d'erreur vs saisie manuelle, délais de paiement.
+  - id: faq-client
+    title: FAQ client (site + clavardage)
+    sector: Services, commerce, éducation
+    problem: Les mêmes questions de prix, délais, garanties. Le site est mort.
+    result_in_two_weeks: Assistant qui répond à partir de vos pages et PDF, avec citation, et escalade vers un humain.
+    stack:
+      - Site existant
+      - Base de connaissances versionnée
+      - Widget de chat ou formulaire
+    data_touched: Questions des clients (souvent des renseignements personnels dès le message 1).
+    loi25:
+      - Bannière et politique à jour — le chat est une collecte.
+      - Pas de coller les conversations dans un GPT personnel.
+      - Purge des fils selon la politique de conservation.
+    out_of_scope: Conseil réglementé (droit, santé, finance personnelle) sans professionnel.
+    success: Déflection, CSAT sur les fils escaladés, hallucinations signalées.
+  - id: memoire-projet
+    title: Mémoire de projet (wedge agents)
+    sector: Services professionnels, R&D, agences
+    problem: Le contexte vit dans 4 têtes et 12 fils Slack. Chaque nouveau mandat recommence à zéro.
+    result_in_two_weeks: Mémoire écrite du mandat — décisions, contraintes, livrables, exceptions — interrogeable.
+    stack:
+      - Dossier projet canonique (Drive / SharePoint)
+      - Agent avec mémoire versionnée (fichiers + journal de décisions)
+      - Droits par projet
+    data_touched: Contenu client, parfois IP, parfois données opérationnelles.
+    loi25:
+      - Un projet = un espace. Pas de mélange inter-clients.
+      - Entente client si un sous-traitant IA lit leurs documents.
+      - Révocation — pouvoir tout effacer à la fin du mandat.
+    out_of_scope: Entraîner un modèle fondation sur les corpus clients.
+    success: Temps de ramp-up d'une nouvelle personne, questions répétées au chargé de projet.
+  - id: veille-ao
+    title: Veille réglementaire et appels d'offres
+    sector: Manufacturier, construction, TI, santé
+    problem: Les AO et les changements de normes arrivent trop tard.
+    result_in_two_weeks: Digest hebdomadaire + matching « on devrait répondre / ignorer » avec justification.
+    stack:
+      - SEAO, sites ministériels, listes sectorielles
+      - Agent de collecte + résumé
+      - Canal Teams dédié
+    data_touched: Surtout de l'information publique; vos grilles de capacité sont internes.
+    loi25:
+      - Ne pas coller de secrets de soumission dans un outil grand public.
+      - Séparer la veille publique et le pricing interne.
+    out_of_scope: Rédaction complète d'une soumission envoyée sans relecture.
+    success: AO vus à temps, heures de tri, taux de go/no-go documenté.
+  - id: support-it
+    title: Support interne TI
+    sector: PME avec un TI débordé (ou aucun)
+    problem: « Ça marche pas » arrive en DM. Le TI refait les mêmes recettes.
+    result_in_two_weeks: Assistant interne sur le wiki TI + tickets structurés pour ce qui reste humain.
+    stack:
+      - Wiki (Confluence, Notion, SharePoint)
+      - Teams bot ou formulaire
+      - File Jira / Linear / feuille partagée
+    data_touched: Noms d'employés, parfois captures d'écran avec données métier.
+    loi25:
+      - Interdire les captures d'écran de dossiers clients dans le bot.
+      - Accès admin au journal des questions.
+    out_of_scope: Réinitialisation de mots de passe sans second facteur humain.
+    success: Tickets L1 déflectés, temps de première réponse TI, recettes ajoutées au wiki.
+  - id: audit-conformite
+    title: Préparation d'audit et conformité
+    sector: ISO, SOC-ish light, Loi 25, clients enterprise
+    problem: L'audit est un scramble de preuves dans des dossiers.
+    result_in_two_weeks: Inventaire des contrôles + assistant qui retrouve la preuve et signale le trou.
+    stack:
+      - Dossier de preuves versionné
+      - Table des contrôles
+      - RAG interne, pas ChatGPT public
+    data_touched: Politiques, logs, parfois extraits de dossiers clients.
+    loi25:
+      - Preuves minimales. Pas d'export massif vers un LLM.
+      - Accès restreint à la fonction conformité.
+    out_of_scope: Certifier la conformité à votre place. On prépare, on ne tamponne pas.
+    success: Heures de préparation, % de contrôles avec preuve à jour.
+  - id: sante-ops
+    title: Assistant ops santé (non clinique)
+    sector: Cliniques, DM, services aux patients — opérations seulement
+    problem: Rendez-vous, formulaires, assurances, heures d'ouverture — le téléphone sonne pour ça.
+    result_in_two_weeks: Assistant administratif qui ne répond jamais à une question clinique.
+    stack:
+      - Politique de clinique + FAQ admin
+      - Téléphonie / clavardage avec escalade
+      - Dossier patient hors de l'index
+    data_touched: Renseignements de santé potentiels dès qu'un patient écrit un symptôme.
+    loi25:
+      - Traiter tout message patient comme sensible.
+      - Refus systématique du clinique — script de bascule vers un humain.
+      - Hébergement et sous-traitants compatibles avec le milieu.
+      - Aucun usage pour diagnostic, triage médical, ou dosage.
+    out_of_scope: Aide à la décision clinique. C'est non négociable.
+    success: Appels admin déflectés, zéro réponse clinique (audit des fils), satisfaction accueil.
+  - id: briefing-direction
+    title: Reporting direction (données → briefing)
+    sector: Toutes, 10+ employés
+    problem: Le lundi commence par coller 4 tableurs dans un e-mail.
+    result_in_two_weeks: Brief d'une page — ce qui a bougé, ce qui est cassé, une question pour la direction.
+    stack:
+      - Sources déjà utilisées (Sheets, Power BI, ERP export)
+      - Script ou n8n le dimanche soir
+      - Canal direction seulement
+    data_touched: Indicateurs agrégés; parfois des identifiants si les exports sont mal faits.
+    loi25:
+      - Agrégats. Pas de listes nominatives dans le brief.
+      - Vérifier les exports avant de les envoyer à un LLM.
+    out_of_scope: Décision automatique de licenciement ou de pricing.
+    success: Minutes de préparation du lundi, questions de la direction mieux ciblées.
+
+partners:
+  - name: PME MTL
+    why: Première ligne des PME de l'île. Lunch&learn opérationnel, pas académique.
+    ask: Cohorte lunch 45 min + 3 diagnostics offerts aux membres.
+    first_talk: "3 processus qu'un agent peut prendre cette semaine"
+  - name: Chambre de commerce du Montréal métropolitain
+    why: Dirigeants, pas coordos. Bon filtre de ticket.
+    ask: Midi-conférence, 1 cohorte co-annoncée.
+    first_talk: "Loi 25 et RAG — sans se faire mal"
+  - name: Manufacturiers et Exportateurs du Québec
+    why: Savoir d'usine qui part à la retraite. Wedge mémoire métier.
+    ask: Webinaire secteur + 1 usine pilote.
+    first_talk: "Mémoire d'usine — arrêter de perdre le savoir des contremaîtres"
+  - name: Fédération des chambres de commerce du Québec
+    why: Relais régions (Québec, Sherbrooke, Saguenay) sans ouvrir 12 BD.
+    ask: Kit lunch&learn reproductible pour les chambres locales.
+    first_talk: "IA concrète en région — stack Microsoft que vous avez déjà"
+  - name: Chambre de commerce et d'industrie de Québec
+    why: Deuxième bassin. Immersion plus tard.
+    ask: Même talk CCMM, cas locaux.
+    first_talk: "Du cas d'usage à l'agent en production"
+  - name: Chambre de commerce de Sherbrooke
+    why: Réseau UdeS / Estrie. Jacob est d'ici.
+    ask: Soirée 40 personnes, tarif beta Estrie.
+    first_talk: "Ce que l'IA ne fera pas dans votre PME — et quoi faire du reste"
+  - name: Ordre des CPA du Québec
+    why: Finance = douleur mesurable (factures, briefing, conformité).
+    ask: Webinaire 60 min + 1 playbook co-signé « revue humaine obligatoire ».
+    first_talk: "Comptes fournisseurs et briefing lundi — l'IA qui reste auditable"
+  - name: Ordre des CRHA
+    why: Playbook RH. Ils craignent le RH-bot hors-la-loi — on part de là.
+    ask: Atelier « ce qu'on n'indexe jamais ».
+    first_talk: "Assistant RH qui cite la politique et se tait sur le reste"
+  - name: Association québécoise des technologies
+    why: TI qui vendent à des PME. Canal de prescripteurs, pas de concurrents.
+    ask: Session membres — packager Atelier IA comme habilitation client.
+    first_talk: "Arrêter de livrer du ChatGPT nu à vos clients"
+  - name: Evol
+    why: Entrepreneures, ticket formation souvent subventionnable.
+    ask: Cohorte mixte, 4 sièges réservés.
+    first_talk: "IA pour diriger sans devenir data scientist"
+
+lunch_learns:
+  - partner: PME MTL
+    title: "3 processus qu'un agent peut prendre cette semaine"
+    duration: 45 min + 15 questions
+    outcome: 8 à 12 inscriptions diagnostic.
+  - partner: CCMM
+    title: "Loi 25 et RAG — sans se faire mal"
+    duration: 45 min
+    outcome: Positionnement confiance; 5 entreprises cohorte.
+  - partner: MEQ
+    title: "Mémoire d'usine"
+    duration: 45 min, exemple manufacturier
+    outcome: 1 usine pilote pour le playbook mémoire.
+
+linkedin_cadence:
+  - week: 1
+    title: Mémoire d'entreprise vs ChatGPT amnésique
+    hook: >-
+      ChatGPT n'a pas de mémoire métier. Votre PME si — dans les têtes, pas dans les systèmes.
+    cta: Liste d'attente Atelier IA.
+  - week: 1
+    title: Ce que je ne ferai pas avec vos données
+    hook: Si le fournisseur entraîne sur votre boîte partagée, ce n'est pas de l'IA, c'est une fuite lente.
+    cta: Diagnostic 30 min.
+  - week: 2
+    title: Trois processus d'une PME manufacturière
+    hook: Qualité, maintenance, et le contremaître qui part. Un seul est un projet modèle. Les deux autres sont des agents.
+    cta: Playbook mémoire d'usine.
+  - week: 2
+    title: Loi 25 en une page
+    hook: Finalité, minimisation, sous-traitant, conservation. Le reste est du théâtre de conformité.
+    cta: Fiche de la semaine 2 de la cohorte.
+  - week: 3
+    title: Le webinar ChatGPT n'est pas une adoption
+    hook: Si rien n'a changé dans la file d'attente vendredi, vous n'avez pas adopté l'IA.
+    cta: Cohorte — un workflow en production.
+  - week: 3
+    title: Prompt, SOP, outil
+    hook: Un prompt sans procédure est un tour de magie. Une procédure sans outil est un classeur.
+    cta: Méthode de la semaine 3.
+  - week: 4
+    title: Pourquoi je refuse le diagnostic clinique
+    hook: Je travaille en neuro et en médical. Justement. L'ops clinique n'est pas le clinicat.
+    cta: Playbook santé ops.
+  - week: 4
+    title: PARI, CRIM, Atelier IA
+    hook: Les institutions font le premier projet R&D. Personne n'habite le jeudi suivant.
+    cta: Positionnement complémentaire.
+  - week: 5
+    title: n8n, Make, Power Automate
+    hook: Choisissez celui qui est déjà connecté à votre identité. Le meilleur outil est celui que le TI ne bloquera pas.
+    cta: Semaine 5.
+  - week: 5
+    title: Mesurer ou se mentir
+    hook: « On dirait que ça va plus vite » n'est pas un KPI. Minutes, erreurs, file.
+    cta: Tableau d'une page.
+  - week: 6
+    title: Cas anonymisé (quand on en aura un)
+    hook: Avant / après en minutes. Pas de logo volé.
+    cta: Liste d'attente.
+  - week: 6
+    title: Invitation diagnostic
+    hook: 30 minutes, 3 processus, 0 diapositives de « révolution ».
+    cta: Courriel.
+
+firewall:
+  title: Cadre d'indépendance
+  rules:
+    - Vérifier par écrit la politique d'activités externes / propriété intellectuelle de Mila avant toute offre payante.
+    - Aucune vente à un client PARI actif sans divulgation et, si requis, autorisation.
+    - Aucun matériel, donnée, dépôt ou canal interne Mila réutilisé dans Atelier IA.
+    - Aucune mention « programme Mila », « officiel Mila », ou logo Mila sur les pages Atelier IA.
+    - Formulation autorisée — « Jacob Lavoie, chercheur en recherche appliquée à Mila, propose de façon indépendante… »
+    - Santé — opérations seulement. Pas d'aide à la décision clinique.
+    - Cas clients — anonymes par défaut; logos seulement avec autorisation écrite de l'entreprise, pas de Mila.
+    - Facturation et contrats au nom de l'entité personnelle / incorporée, jamais de Mila.
+
+subscription:
+  thesis: La cohorte vend le résultat. L'abonnement vend le jeudi suivant.
+  convert_when: Après la démo de la semaine 8, offre Atelier+ 30 jours à tarif alumni.
+  target_conversion: 40 % des entreprises de la cohorte.
+  defer_builder: Pas de SaaS « builder » avant 10 organisations payantes et 6 playbooks vraiment remixés.
+  channels:
+    - Santé / sciences de la vie (ops)
+    - Manufacturier
+    - Services professionnels
+    - Commerce et retail
+  weekly_ops:
+    - 1 live mentorat 60 min (Jacob)
+    - Office hours 30 min
+    - 1 playbook ou cas ajouté par mois, pas par semaine
+    - Modération asynchrone — pigiste FR dès 30 membres
