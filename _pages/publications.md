@@ -18,3 +18,79 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+<!-- Additive, invisible AEO/SEO: ScholarlyArticle JSON-LD so answer engines and Google can
+     associate these works with the Jacob Lavoie Person entity (sameAs -> ORCID). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Learning to See via Epiretinal Implant Stimulation in silico with Model-Based Deep Reinforcement Learning",
+      "name": "Learning to See via Epiretinal Implant Stimulation in silico with Model-Based Deep Reinforcement Learning",
+      "datePublished": "2024",
+      "isPartOf": { "@type": "Periodical", "name": "Biomedical Physics & Engineering Express" },
+      "identifier": "https://doi.org/10.1088/2057-1976/acf1a5",
+      "sameAs": "https://doi.org/10.1088/2057-1976/acf1a5",
+      "author": {
+        "@type": "Person",
+        "name": "Jacob Lavoie",
+        "sameAs": "https://orcid.org/0000-0003-3741-4701"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization",
+      "name": "Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization",
+      "datePublished": "2026",
+      "isPartOf": { "@type": "Periodical", "name": "arXiv" },
+      "identifier": "https://arxiv.org/abs/2605.28810",
+      "sameAs": "https://arxiv.org/abs/2605.28810",
+      "author": {
+        "@type": "Person",
+        "name": "Jacob Lavoie",
+        "sameAs": "https://orcid.org/0000-0003-3741-4701"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "A 1.6-fJ/Spike Subthreshold Analog Spiking Neuron in 28 nm CMOS",
+      "name": "A 1.6-fJ/Spike Subthreshold Analog Spiking Neuron in 28 nm CMOS",
+      "datePublished": "2026",
+      "isPartOf": { "@type": "Periodical", "name": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems" },
+      "identifier": "https://doi.org/10.1109/JETCAS.2026.3721358",
+      "sameAs": "https://doi.org/10.1109/JETCAS.2026.3721358",
+      "author": {
+        "@type": "Person",
+        "name": "Jacob Lavoie",
+        "sameAs": "https://orcid.org/0000-0003-3741-4701"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Energy-efficient spiking neural network implementation for a retinal prosthesis",
+      "name": "Energy-efficient spiking neural network implementation for a retinal prosthesis",
+      "datePublished": "2025",
+      "isPartOf": { "@type": "Periodical", "name": "Neuroelectronics" },
+      "author": {
+        "@type": "Person",
+        "name": "Jacob Lavoie",
+        "sameAs": "https://orcid.org/0000-0003-3741-4701"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Quantized spiking neural networks on FPGA: an application to retinal prosthetics",
+      "name": "Quantized spiking neural networks on FPGA: an application to retinal prosthetics",
+      "datePublished": "2023",
+      "isPartOf": { "@type": "Event", "name": "2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)" },
+      "author": {
+        "@type": "Person",
+        "name": "Jacob Lavoie",
+        "sameAs": "https://orcid.org/0000-0003-3741-4701"
+      }
+    }
+  ]
+}
+</script>
